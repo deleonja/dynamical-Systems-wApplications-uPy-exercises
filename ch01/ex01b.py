@@ -1,4 +1,10 @@
-# 1.b. Write a Python program that sums the subset of prime numbers
+# Author: José Alfredo de León
+# Date: 18.07.2020
+
+# Book: Dynamical Systems with Applications using Python, 2018
+# Exercise 1.b
+
+# Write a Python program that sums the subset of prime numbers
 # up to some natural number, n, say.
 
 import sys
@@ -14,6 +20,7 @@ def is_prime(number):
     is_prime(2) = True
     is_prime(6) = False
     '''
+    # Check if number is divisible by 2 and greater then two
     if number % 2 == 0 and number > 2:
         return False
     return all(number % i for i in range(3, math.ceil(number), 2))

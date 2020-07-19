@@ -2,7 +2,7 @@
 # Date: 18.07.2020
 
 # Book: Dynamical Systems with Applications using Python, 2018
-# Exercise 1.b
+# Exercise 1.a
 
 # Write a function for converting degrees Fahrenheit to degrees
 # Centigrade.

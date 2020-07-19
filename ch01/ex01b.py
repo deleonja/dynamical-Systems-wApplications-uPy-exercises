@@ -7,22 +7,31 @@ import math
 
 
 def is_prime(number):
+    '''
+    Function to check whether a number is prime or not.
+
+    Example:
+    is_prime(2) = True
+    is_prime(6) = False
+    '''
     if number % 2 == 0 and number > 2:
         return False
-    print(number % i for i in range(3, int(math.sqrt(number)) + 1, 2))
     return all(number % i for i in range(3, math.ceil(number), 2))
 
 
-print(is_prime(13))
-
+# Take number n from command line inserted in terminal
 n = int(sys.argv[1])
+
+# Find prime numbers in [1,n]
 list = np.arange(1, n+1)
 foo = np.vectorize(is_prime)
 pbools = foo(list)
 primes = np.extract(pbools, list)
 
+# Sum all the primes
 sum = 0
 for prime in primes:
     sum = sum + prime
 
+# Print the sum
 print("Sum = " + str(sum))

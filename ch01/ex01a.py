@@ -14,5 +14,5 @@ def FtoC(F):
     Example:
     FtoC(50) = 5/9*(50-32) =
     '''
-    Centigrade = 5/9*(F - 32)
+    Centigrade = 5 / 9 * (F - 32)
     return Centigrade
